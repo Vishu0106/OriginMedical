@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react'
 import { useDropzone } from 'react-dropzone'
 import axios from 'axios'
-import MetadataDisplay from './MetadataDisplay'
+import MetadataDisplay from './MetaDataDisplay'
 import toast from 'react-hot-toast'
 
 export default function DragDropArea() {
