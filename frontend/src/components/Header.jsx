@@ -40,8 +40,7 @@ return (
             </Link>
             <div className="hidden md:flex space-x-4 items-center">
                 <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400 dark:text-white">Home</Link>
-                <a href="#features" className="hover:text-blue-600 dark:hover:text-blue-400 dark:text-white">Features</a>
-                <Link to="/image-manipulation" className="hover:text-blue-600 dark:hover:text-blue-400 dark:text-white">Upload</Link>
+                <Link to="/dicom-image-parser" className="hover:text-blue-600 dark:hover:text-blue-400 dark:text-white">Upload</Link>
                 <Link to="/help" className="hover:text-blue-600 dark:hover:text-blue-400 dark:text-white">Help</Link>
                 
                 <button
@@ -66,8 +65,7 @@ return (
             <div className="md:hidden bg-white dark:bg-gray-900 py-4">
                 <div className="container mx-auto px-4 flex flex-col space-y-4">
                     <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400 dark:text-white">Home</Link>
-                    <a href="#features" className="hover:text-blue-600 dark:hover:text-blue-400 dark:text-white">Features</a>
-                    <Link to="/image-manipulation" className="hover:text-blue-600 dark:hover:text-blue-400 dark:text-white">Upload</Link>
+                    <Link to="/dicom-image-parser" className="hover:text-blue-600 dark:hover:text-blue-400 dark:text-white">Upload</Link>
                     <Link to="/help" className="hover:text-blue-600 dark:hover:text-blue-400 dark:text-white">Help</Link>
                     <button
                         onClick={toggleTheme}

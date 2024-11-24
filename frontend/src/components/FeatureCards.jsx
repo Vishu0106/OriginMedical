@@ -6,16 +6,19 @@ const features = [
     icon: Crop,
     title: 'Image Manipulation Tools',
     description: 'Crop, zoom, pan, and adjust brightness and contrast effortlessly.',
+    link: '/image-manipulation'
   },
   {
     icon: FileImage,
     title: 'DICOM Support',
     description: 'Upload, view, and analyze DICOM images with metadata.',
+    link: '/dicom-image-parser'
   },
   {
     icon: Ruler,
     title: 'Real-World Measurements',
     description: 'Convert pixel data into accurate real-world units. cm , mm , pixels etc.',
+    link: '/real-world-measurements'
   },
 ]
 
@@ -25,7 +28,7 @@ export default function FeatureCards() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 hover:cursor-pointer">
           {features.map((feature, index) => (
-            <Link to='/image-manipulation' key={index}>
+            <Link to={`${feature.link}`} key={index}>
               <div
               className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out"
             >
