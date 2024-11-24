@@ -1,6 +1,7 @@
 import dotenv from 'dotenv';
 import express from 'express';
 import dicomRoutes from './src/routes/dicom.route.js';
+import cors from 'cors';
 
 
 dotenv.config();
@@ -13,6 +14,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
+
+app.use(cors({ origin: process.env.ORIGIN , credentials: true }));
 app.use(express.json());
 
 // Static file serving
